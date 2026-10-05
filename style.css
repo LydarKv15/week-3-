@@ -1,0 +1,350 @@
+/* ------------------------------
+   General Page Styling
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    background-color: #f4f7fb;
+    color: #202936;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    background-color: #17324d;
+    color: #ffffff;
+    padding: 45px 8%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+}
+
+header > p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #dce8f2;
+}
+
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+nav {
+    margin-top: 28px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #245b83;
+    border-color: #6fa8c9;
+}
+
+nav a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* ------------------------------
+   Main Sections
+------------------------------ */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 8%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #17324d;
+    font-size: 2rem;
+}
+
+section h3 {
+    color: #245b83;
+}
+
+
+/* ------------------------------
+   About Section
+------------------------------ */
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 25px auto;
+    border: 5px solid #d9e7f2;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 15px auto;
+    color: #4c5967;
+}
+
+
+/* ------------------------------
+   Skills
+------------------------------ */
+
+dl {
+    max-width: 850px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+dl div {
+    padding: 22px;
+    background-color: #eef4f8;
+    border-left: 5px solid #2d7db3;
+    border-radius: 8px;
+}
+
+dt {
+    font-weight: bold;
+    color: #17324d;
+    font-size: 1.1rem;
+}
+
+dd {
+    margin: 8px 0 0;
+    color: #596674;
+}
+
+
+/* ------------------------------
+   Projects
+------------------------------ */
+
+#projects {
+    background-color: #f4f7fb;
+}
+
+#projects article {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #dce4eb;
+    box-shadow: 0 3px 10px rgba(23, 50, 77, 0.08);
+}
+
+#projects article h3 {
+    margin-top: 0;
+}
+
+#projects article p {
+    color: #596674;
+}
+
+
+/* ------------------------------
+   Contact
+------------------------------ */
+
+#contact {
+    background-color: #ffffff;
+}
+
+#contact a {
+    color: #216b9b;
+    font-weight: bold;
+}
+
+form {
+    max-width: 650px;
+    margin-top: 30px;
+}
+
+fieldset {
+    border: 1px solid #ccd8e2;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #17324d;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #bdcbd7;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #216b9b;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17324d;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    background-color: #17324d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #dce8f2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 35px 5%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    dl {
+        grid-template-columns: 1fr;
+    }
+
+    #about img {
+        width: 180px;
+        height: 180px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+}
+
+
+/* ------------------------------
+   Small Mobile Screens
+------------------------------ */
+
+@media (max-width: 450px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+}
